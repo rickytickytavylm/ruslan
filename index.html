@@ -528,9 +528,11 @@
         /* Investment */
         .investment-cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
             align-items: stretch;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .invest-card {
@@ -1483,30 +1485,18 @@
                 <p>Выберите подходящий формат сотрудничества</p>
             </div>
             <div class="investment-cards">
-                <div class="invest-card">
-                    <h3>Старт</h3>
-                    <div class="invest-price">500 000 ₽</div>
+                <div class="invest-card popular">
+                    <h3>Бизнес</h3>
+                    <div class="invest-price">1 200 000 ₽</div>
                     <div class="invest-period">паушальный взнос</div>
                     <ul class="invest-list">
                         <li>Бренд и фирменный стиль</li>
-                        <li>Методология работы</li>
-                        <li>Обучение 2 специалистов</li>
-                        <li>Документация и регламенты</li>
-                        <li>Поддержка 3 месяца</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Выбрать пакет</a>
-                </div>
-                <div class="invest-card popular">
-                    <h3>Бизнес</h3>
-                    <div class="invest-price">800 000 ₽</div>
-                    <div class="invest-period">паушальный взнос</div>
-                    <ul class="invest-list">
-                        <li>Всё из пакета Старт</li>
-                        <li>Обучение 5 специалистов</li>
-                        <li>Выезд наставника на открытие</li>
-                        <li>Настройка рекламы</li>
+                        <li>Методология и регламенты</li>
+                        <li>Обучение команды</li>
+                        <li>Роялти 25% с 3-го месяца</li>
+                        <li>300 000 ₽/мес на рекламу</li>
+                        <li>Единый колл-центр продаж</li>
                         <li>Поддержка 6 месяцев</li>
-                        <li>CRM-система в подарок</li>
                     </ul>
                     <a href="#contact" class="btn">Выбрать пакет</a>
                 </div>
@@ -1516,9 +1506,10 @@
                     <div class="invest-period">паушальный взнос</div>
                     <ul class="invest-list">
                         <li>Всё из пакета Бизнес</li>
-                        <li>Обучение всей команды</li>
-                        <li>Помощь в лицензировании</li>
-                        <li>Подбор и ремонт помещения</li>
+                        <li>Помощь в подборе помещения</li>
+                        <li>Роялти 25% с 6-го месяца</li>
+                        <li>300 000 ₽/мес на рекламу</li>
+                        <li>Единый колл-центр продаж</li>
                         <li>Поддержка 12 месяцев</li>
                         <li>Персональный менеджер</li>
                     </ul>
@@ -1610,8 +1601,7 @@
                         <div class="form-group">
                             <label>Интересующий пакет</label>
                             <select>
-                                <option>Старт — 500 000 ₽</option>
-                                <option>Бизнес — 800 000 ₽</option>
+                                <option>Бизнес — 1 200 000 ₽</option>
                                 <option>Премиум — 1 500 000 ₽</option>
                                 <option>Нужна консультация</option>
                             </select>
