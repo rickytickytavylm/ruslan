@@ -438,6 +438,30 @@
             color: var(--gray);
         }
 
+        .why-stat-blue .why-stat-number {
+            color: #2563EB;
+        }
+
+        .why-image-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .why-main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .why-main-image {
+                height: 250px;
+            }
+        }
+
         .why-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -1267,108 +1291,6 @@
         </div>
     </section>
 
-    <!-- Case Study -->
-    <section class="section case" id="case">
-        <div class="container">
-            <div class="section-header">
-                <h2>Реальные кейсы запуска</h2>
-                <p>Центры, которые уже работают и приносят прибыль</p>
-            </div>
-            <div class="cases-carousel">
-                <!-- Case 1: Казань -->
-                <div class="case-card">
-                    <div class="case-image">
-                        <img src="rehab1.jpg" alt="Центр в Казани">
-                    </div>
-                    <div class="case-content">
-                        <div class="case-header">
-                            <span class="case-city">Казань</span>
-                            <span class="case-status">Работает 18 месяцев</span>
-                        </div>
-                        <div class="case-grid">
-                            <div class="case-item">
-                                <span class="case-value">1.2 млн ₽</span>
-                                <span class="case-label">Инвестиции</span>
-                            </div>
-                            <div class="case-item">
-                                <span class="case-value">3 мес</span>
-                                <span class="case-label">Запуск</span>
-                            </div>
-                            <div class="case-item">
-                                <span class="case-value">78%</span>
-                                <span class="case-label">Загрузка</span>
-                            </div>
-                            <div class="case-item highlight">
-                                <span class="case-value">420K ₽</span>
-                                <span class="case-label">Прибыль/мес</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Case 2: Нижний Новгород -->
-                <div class="case-card">
-                    <div class="case-image">
-                        <img src="rehab2.jpg" alt="Центр в Нижнем Новгороде">
-                    </div>
-                    <div class="case-content">
-                        <div class="case-header">
-                            <span class="case-city">Нижний Новгород</span>
-                            <span class="case-status">Работает 12 месяцев</span>
-                        </div>
-                        <div class="case-grid">
-                            <div class="case-item">
-                                <span class="case-value">1.5 млн ₽</span>
-                                <span class="case-label">Инвестиции</span>
-                            </div>
-                            <div class="case-item">
-                                <span class="case-value">2.5 мес</span>
-                                <span class="case-label">Запуск</span>
-                            </div>
-                            <div class="case-item">
-                                <span class="case-value">85%</span>
-                                <span class="case-label">Загрузка</span>
-                            </div>
-                            <div class="case-item highlight">
-                                <span class="case-value">380K ₽</span>
-                                <span class="case-label">Прибыль/мес</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Case 3: Самара -->
-                <div class="case-card">
-                    <div class="case-image">
-                        <img src="rehab3.jpg" alt="Центр в Самаре">
-                    </div>
-                    <div class="case-content">
-                        <div class="case-header">
-                            <span class="case-city">Самара</span>
-                            <span class="case-status">Работает 8 месяцев</span>
-                        </div>
-                        <div class="case-grid">
-                            <div class="case-item">
-                                <span class="case-value">900K ₽</span>
-                                <span class="case-label">Инвестиции</span>
-                            </div>
-                            <div class="case-item">
-                                <span class="case-value">2 мес</span>
-                                <span class="case-label">Запуск</span>
-                            </div>
-                            <div class="case-item">
-                                <span class="case-value">72%</span>
-                                <span class="case-label">Загрузка</span>
-                            </div>
-                            <div class="case-item highlight">
-                                <span class="case-value">290K ₽</span>
-                                <span class="case-label">Прибыль/мес</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Why Franchise -->
     <section class="section" id="about">
         <div class="container">
@@ -1376,12 +1298,15 @@
                 <h2>Почему франшиза «Образ мысли»</h2>
                 <p>Работаем по проверенной методологии с гарантированным результатом</p>
             </div>
+            <div class="why-image-wrap">
+                <img src="rehab2.jpg" alt="Реабилитационный центр Образ Мысли" class="why-main-image">
+            </div>
             <div class="why-stats">
                 <div class="why-stat">
                     <span class="why-stat-number">12+</span>
                     <span class="why-stat-label">центров открыто</span>
                 </div>
-                <div class="why-stat">
+                <div class="why-stat why-stat-blue">
                     <span class="why-stat-number">25+</span>
                     <span class="why-stat-label">специалистов в системе</span>
                 </div>
